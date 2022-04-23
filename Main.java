@@ -22,9 +22,9 @@ public class Main {
             System.out.println(ex.getMessage());
         }
 
-        try(BufferedReader read = new BufferedReader(new FileReader("ip.txt"))){
+        try(BufferedReader rd = new BufferedReader(new FileReader("ip.txt"))){
             String s;
-            while((s = read.readLine())!=null){
+            while((s = rd.readLine())!=null){
                 System.out.println(s);
             }
         }
